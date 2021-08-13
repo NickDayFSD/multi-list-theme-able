@@ -1,0 +1,34 @@
+.characterList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background-color: lemonchiffon;
+}
+
+.listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 5px;
+  padding: 10px;
+  width: 325px;
+  height: 325px;
+  border-radius: 5px;
+
+  background-color: lavender;
+}
+
+.listing figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listing img {
+  max-width: 300px;
+  max-height: 300px;
+}

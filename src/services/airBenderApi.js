@@ -1,4 +1,4 @@
-export const fetchAirBenderCharacters = async () => {
+export const fetchAirbenderCharacters = async () => {
   const res = await fetch(
     'https://last-airbender-api.herokuapp.com/api/v1/characters'
   );
