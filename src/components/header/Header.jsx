@@ -1,6 +1,6 @@
 import React from 'react';
 import APIToggle from './APIToggle';
-import { useDark } from '../../state/CharacterProvider';
+import { useDark, useTheme } from '../../state/CharacterProvider';
 import styles from './header.css';
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
     <header>
       <p className={styles.container}>
         <h1>Character Explorer</h1>
-        <button onClick={handleClick}>Dark Mode {isDark}</button>
+        <button onClick={handleClick}>Theme Change!</button>
       </p>
       <APIToggle />
     </header>

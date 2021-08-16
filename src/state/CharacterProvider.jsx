@@ -11,7 +11,8 @@ export const CharacterProvider = ({ children }) => {
   // set state here
   const [characters, setCharacters] = useState([]);
   const [selectedApi, setSelectedApi] = useState('lastAirbender');
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
+  const [theme, setTheme] = useState('light');
 
   // list apis here
   const apiMap = {
@@ -25,10 +26,16 @@ export const CharacterProvider = ({ children }) => {
     apiMap[selectedApi]().then(setCharacters);
   }, [selectedApi]);
 
+  // useEffect to activate theme switch
+  useEffect(() => {
+    if (isDark === true) setTheme('dark');
+    if (isDark === false) setTheme('light');
+  }, [isDark]);
+
   // return jsx
   return (
     <CharacterContext.Provider
-      value={{ characters, setSelectedApi, apiMap, isDark, setIsDark }}
+      value={{ characters, setSelectedApi, apiMap, isDark, setIsDark, theme }}
     >
       {children}
     </CharacterContext.Provider>
@@ -54,4 +61,9 @@ export const useAvailableAPIs = () => {
 export const useDark = () => {
   const { isDark, setIsDark } = useContext(CharacterContext);
   return { isDark, setIsDark };
+};
+
+export const useTheme = () => {
+  const { theme } = useContext(CharacterContext);
+  return theme;
 };

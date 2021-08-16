@@ -1,0 +1,26 @@
+.light {
+  background-color: rgb(239, 239, 197);
+  --bg2-color: rgba(0, 0, 0, 0.25);
+  color: black;
+  --button-color: rgb(254, 189, 70);
+}
+
+.dark {
+  background-color: rgb(40, 40, 40);
+  --bg2-color: rgba(254, 254, 254, 0.25);
+  color: white;
+  --button-color: rgb(0, 0, 189);
+}
+
+* {
+  background-color: var(bg-color);
+  color: var(primary-color);
+}
+
+.light header {
+  background-color: var(bg2-color);
+}
+
+.listing {
+  background-color: var(bg2-color);
+}
