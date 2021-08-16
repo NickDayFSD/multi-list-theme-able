@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 // import fetches
-import { fetchAirbenderCharacters } from '../services/airbenderApi';
-import { fetchHeyArnoldCharacters } from '../services/heyArnoldApi';
-import { fetchRickAndMortyCharacters } from '../services/rickAndMortyApi';
+import { fetchAirbenderCharacters } from '../services/airbenderApi.js';
+import { fetchHeyArnoldCharacters } from '../services/heyArnoldApi.js';
+import { fetchRickAndMortyCharacters } from '../services/rickAndMortyApi.js';
 
 const CharacterContext = createContext();
 
