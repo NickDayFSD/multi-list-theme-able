@@ -1,0 +1,31 @@
+.light {
+  background-color: rgb(239, 239, 197);
+  --bg2-color: rgba(0, 0, 0, 0.25);
+  color: black;
+  --button-color: rgb(254, 189, 70);
+}
+
+.dark {
+  background-color: rgb(40, 40, 40);
+  --bg2-color: rgba(254, 254, 254, 0.25);
+  color: white;
+  --button-color: rgb(0, 0, 110);
+}
+
+header {
+  background-color: rgba(162, 255, 122, 0.25);
+}
+
+.dark header button {
+  background-color: rgba(255, 165, 0);
+  color: black;
+}
+
+.light header button {
+  background-color: rgb(0, 10, 117);
+  color: white;
+}
+
+.listing {
+  background-color: rgba(162, 255, 122, 0.25);
+}
