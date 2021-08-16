@@ -9,18 +9,23 @@
   background-color: rgb(40, 40, 40);
   --bg2-color: rgba(254, 254, 254, 0.25);
   color: white;
-  --button-color: rgb(0, 0, 189);
+  --button-color: rgb(0, 0, 110);
 }
 
-* {
-  background-color: var(bg-color);
-  color: var(primary-color);
+header {
+  background-color: rgba(162, 255, 122, 0.25);
 }
 
-.light header {
-  background-color: var(bg2-color);
+.dark header button {
+  background-color: rgba(255, 165, 0);
+  color: black;
+}
+
+.light header button {
+  background-color: rgb(0, 10, 117);
+  color: white;
 }
 
 .listing {
-  background-color: var(bg2-color);
+  background-color: rgba(162, 255, 122, 0.25);
 }
