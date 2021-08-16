@@ -1,6 +1,6 @@
 import React from 'react';
 import APIToggle from './APIToggle';
-import { useDark, useTheme } from '../../state/CharacterProvider';
+import { useDark } from '../../state/CharacterProvider';
 import styles from './header.css';
 
 const Header = () => {
