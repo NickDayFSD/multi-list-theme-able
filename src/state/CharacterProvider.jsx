@@ -11,6 +11,7 @@ export const CharacterProvider = ({ children }) => {
   // set state here
   const [characters, setCharacters] = useState([]);
   const [selectedApi, setSelectedApi] = useState('lastAirbender');
+  const [isDark, setIsDark] = useState(false);
 
   // list apis here
   const apiMap = {
@@ -26,7 +27,9 @@ export const CharacterProvider = ({ children }) => {
 
   // return jsx
   return (
-    <CharacterContext.Provider value={{ characters, setSelectedApi, apiMap }}>
+    <CharacterContext.Provider
+      value={{ characters, setSelectedApi, apiMap, isDark, setIsDark }}
+    >
       {children}
     </CharacterContext.Provider>
   );
@@ -45,6 +48,10 @@ export const useSetSelectedAPI = () => {
 
 export const useAvailableAPIs = () => {
   const { apiMap } = useContext(CharacterContext);
-  console.log(apiMap);
   return Object.keys(apiMap);
+};
+
+export const useDark = () => {
+  const { isDark, setIsDark } = useContext(CharacterContext);
+  return { isDark, setIsDark };
 };

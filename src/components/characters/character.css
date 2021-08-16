@@ -4,7 +4,7 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  background-color: lemonchiffon;
+  /* background-color: lemonchiffon; */
 }
 
 .listing {
@@ -18,7 +18,7 @@
   height: 325px;
   border-radius: 5px;
 
-  background-color: lavender;
+  /* background-color: lavender; */
 }
 
 .listing figure {
