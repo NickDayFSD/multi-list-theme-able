@@ -11,7 +11,7 @@ export const CharacterProvider = ({ children }) => {
   // set state here
   const [characters, setCharacters] = useState([]);
   const [selectedApi, setSelectedApi] = useState('lastAirbender');
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const [theme, setTheme] = useState('light');
 
   // list apis here
