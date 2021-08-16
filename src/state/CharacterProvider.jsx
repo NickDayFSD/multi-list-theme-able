@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 // import fetches
-import { fetchAirbenderCharacters } from '../services/airbenderApi.js';
+import { fetchAirBenderCharacters } from '../services/airBenderApi.js';
 import { fetchHeyArnoldCharacters } from '../services/heyArnoldApi.js';
 import { fetchRickAndMortyCharacters } from '../services/rickAndMortyApi.js';
 
@@ -16,7 +16,7 @@ export const CharacterProvider = ({ children }) => {
 
   // list apis here
   const apiMap = {
-    lastAirbender: fetchAirbenderCharacters,
+    lastAirbender: fetchAirBenderCharacters,
     heyArnold: fetchHeyArnoldCharacters,
     rickAndMorty: fetchRickAndMortyCharacters,
   };
